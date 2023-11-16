@@ -13,19 +13,19 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0emessages.proto\"6\n\x0b\x44\x61taMessage\x12\x11\n\twindAngle\x18\x01 \x01(\x02\x12\x14\n\x0c\x62\x61tteryLevel\x18\x02 \x01(\r\"\x83\x01\n\x0e\x43ontrolMessage\x12\x33\n\x0c\x63ontrol_type\x18\x01 \x01(\x0e\x32\x1d.CONTROL_MESSAGE_CONTROL_TYPE\x12%\n\x05state\x18\x02 \x01(\x0e\x32\x16._TrimState_TRIM_STATE\x12\x15\n\rcontrol_angle\x18\x03 \x01(\r*\xfb\x01\n\x15_TrimState_TRIM_STATE\x12&\n\"TrimState_TRIM_STATE_MAX_LIFT_PORT\x10\x00\x12&\n\"TrimState_TRIM_STATE_MAX_LIFT_STBD\x10\x01\x12&\n\"TrimState_TRIM_STATE_MAX_DRAG_PORT\x10\x02\x12&\n\"TrimState_TRIM_STATE_MAX_DRAG_STBD\x10\x03\x12!\n\x1dTrimState_TRIM_STATE_MIN_LIFT\x10\x04\x12\x1f\n\x1bTrimState_TRIM_STATE_MANUAL\x10\x05*n\n\x1c\x43ONTROL_MESSAGE_CONTROL_TYPE\x12&\n\"CONTROL_MESSAGE_CONTROL_TYPE_STATE\x10\x00\x12&\n\"CONTROL_MESSAGE_CONTROL_TYPE_ANGLE\x10\x01\x62\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0emessages.proto\"6\n\x0b\x44\x61taMessage\x12\x11\n\twindAngle\x18\x01 \x01(\x02\x12\x14\n\x0c\x62\x61tteryLevel\x18\x02 \x01(\r\"x\n\x0e\x43ontrolMessage\x12\x33\n\x0c\x63ontrol_type\x18\x01 \x01(\x0e\x32\x1d.CONTROL_MESSAGE_CONTROL_TYPE\x12\x1a\n\x05state\x18\x02 \x01(\x0e\x32\x0b.TRIM_STATE\x12\x15\n\rcontrol_angle\x18\x03 \x01(\r*\xb4\x01\n\nTRIM_STATE\x12\x1c\n\x18TRIM_STATE_MAX_LIFT_PORT\x10\x00\x12\x1c\n\x18TRIM_STATE_MAX_LIFT_STBD\x10\x01\x12\x1c\n\x18TRIM_STATE_MAX_DRAG_PORT\x10\x02\x12\x1c\n\x18TRIM_STATE_MAX_DRAG_STBD\x10\x03\x12\x17\n\x13TRIM_STATE_MIN_LIFT\x10\x04\x12\x15\n\x11TRIM_STATE_MANUAL\x10\x05*n\n\x1c\x43ONTROL_MESSAGE_CONTROL_TYPE\x12&\n\"CONTROL_MESSAGE_CONTROL_TYPE_STATE\x10\x00\x12&\n\"CONTROL_MESSAGE_CONTROL_TYPE_ANGLE\x10\x01\x62\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'messages_pb2', _globals)
 if _descriptor._USE_C_DESCRIPTORS == False:
   DESCRIPTOR._options = None
-  _globals['__TRIMSTATE_TRIM_STATE']._serialized_start=209
-  _globals['__TRIMSTATE_TRIM_STATE']._serialized_end=460
-  _globals['_CONTROL_MESSAGE_CONTROL_TYPE']._serialized_start=462
-  _globals['_CONTROL_MESSAGE_CONTROL_TYPE']._serialized_end=572
+  _globals['_TRIM_STATE']._serialized_start=197
+  _globals['_TRIM_STATE']._serialized_end=377
+  _globals['_CONTROL_MESSAGE_CONTROL_TYPE']._serialized_start=379
+  _globals['_CONTROL_MESSAGE_CONTROL_TYPE']._serialized_end=489
   _globals['_DATAMESSAGE']._serialized_start=18
   _globals['_DATAMESSAGE']._serialized_end=72
-  _globals['_CONTROLMESSAGE']._serialized_start=75
-  _globals['_CONTROLMESSAGE']._serialized_end=206
+  _globals['_CONTROLMESSAGE']._serialized_start=74
+  _globals['_CONTROLMESSAGE']._serialized_end=194
 # @@protoc_insertion_point(module_scope)
