@@ -1,5 +1,26 @@
 syntax = "proto3";
 
-message MyMessage {
-    string content = 1;
+enum _TrimState_TRIM_STATE {
+    TrimState_TRIM_STATE_MAX_LIFT_PORT = 0;
+    TrimState_TRIM_STATE_MAX_LIFT_STBD = 1;
+    TrimState_TRIM_STATE_MAX_DRAG_PORT = 2;
+    TrimState_TRIM_STATE_MAX_DRAG_STBD = 3;
+    TrimState_TRIM_STATE_MIN_LIFT = 4;
+    TrimState_TRIM_STATE_MANUAL = 5;
+}
+
+enum CONTROL_MESSAGE_CONTROL_TYPE {
+    CONTROL_MESSAGE_CONTROL_TYPE_STATE = 0;
+    CONTROL_MESSAGE_CONTROL_TYPE_ANGLE = 1;
+}
+
+message DataMessage {
+    float windAngle = 1;
+    uint32 batteryLevel = 2;
+}
+
+message ControlMessage {
+    CONTROL_MESSAGE_CONTROL_TYPE control_type = 1;
+    _TrimState_TRIM_STATE state = 2;
+    uint32 control_angle = 3;
 }
